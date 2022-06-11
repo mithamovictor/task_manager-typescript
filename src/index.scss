@@ -61,7 +61,10 @@ $globalFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
     justify: { content: center; };
     align: { items: center; };
     flex: { wrap: wrap; };
-    width: 90%;
+    max-width: 500px;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
 
     .todo {
       display: flex;
@@ -122,11 +125,16 @@ $globalFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
       }
     }
   }
+
   .input {
     display: flex;
-    width: 90%;
+    max-width: 500px;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
     position: relative;
     align: { items: center; };
+
     .input__field {
       width: 100%;
       border-radius: $globalRadius*50;
@@ -155,7 +163,7 @@ $globalFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
         width: 0;
         radius: toRem(50);
       };
-      right: 0;
+      right: 1rem;
       font: { size: $globalFontSize*0.8; };
       background: { color: $green };
       color: $white;

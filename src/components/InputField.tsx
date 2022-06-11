@@ -25,7 +25,14 @@ const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
         type="text"
         placeholder="Enter a task"
       />
-      <button className="input__submit" type="button">
+      <button
+        className="input__submit"
+        type="button"
+        onClick={(e) => {
+          handleAdd(e);
+          inputRef.current?.blur();
+        }}
+      >
         Add
       </button>
     </form>
